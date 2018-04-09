@@ -1,0 +1,18 @@
+{
+  "name": "simple-react-template",
+  "version": "0.0.1",
+  "description": "A simple enough react scaffold with a node server built in.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "scaffold",
+    "simple-react-template",
+    "yeoman-generator",
+    "generator"
+  ],
+  "author": "Munim Dibosh",
+  "license": "MIT"
+}
