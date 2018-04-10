@@ -5,11 +5,13 @@ var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  entry: APP_DIR + '/index.jsx',
+  entry: {
+    bundle: APP_DIR + '/index.jsx'
+  },
   devtool: 'source-map',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   watchOptions: {
     ignored: /node_modules/
@@ -86,6 +88,17 @@ var config = {
         ]
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all"
+        }
+      }
+    }
   }
 };
 
