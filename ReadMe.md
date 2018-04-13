@@ -1,7 +1,7 @@
 ### Simple React Template
 
-A simple enough react boilerplate; built using `webpack`, served by 
-`webpack-serve`, comes with `lodash`, `axios` and `jquery`.
+A simple enough react boilerplate; built using `webpack`, served by
+`webpack-dev-server`, comes with `lodash`, `axios` and `jquery`.
 
 
 ## Setup
@@ -9,7 +9,7 @@ A simple enough react boilerplate; built using `webpack`, served by
 - `yarn install`
 - Build for dev- `yarn build-dev`
 - Build for prod- `yarn build-prod`
-- Run in localhost:3000- `yarn start`
+- Run in localhost:3000 & open in browser(auto watch)- `yarn start`
 
 ## What's included
 
@@ -44,12 +44,3 @@ A simple enough react boilerplate; built using `webpack`, served by
       |-- index.jsx (the entry point where the app renders the main component and which eventually renders the views
           based on selected route)
    ```
-## The MIT License
-
-Copyright 2018 © Munim Dibosh
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
