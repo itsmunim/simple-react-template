@@ -13,8 +13,13 @@ var config = {
     path: BUILD_DIR,
     filename: '[name].js'
   },
-  watchOptions: {
-    ignored: /node_modules/
+  devServer: {
+    contentBase: '.',
+    port: 3000,
+    open: true,
+    watchOptions: {
+      ignored: /node_modules/
+    }
   },
   module : {
     rules: [
