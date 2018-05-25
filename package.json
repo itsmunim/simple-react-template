@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "description": "A simple enough react scaffold with a node server built in.",
   "main": "index.js",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setup.enzyme.js"
+  },
   "scripts": {
     "build-dev": "rm -rf dist/ && webpack --progress --mode=development",
     "build-prod": "rm -rf dist/ && webpack --progress --mode=production",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "test": "jest"
   },
   "engines": {
     "node": ">=6.11.5"
@@ -34,14 +38,18 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^23.0.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.7.0",
     "file-loader": "^1.1.11",
+    "jest": "^23.0.0",
     "node-sass": "^4.8.3",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
