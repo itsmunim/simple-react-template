@@ -10,7 +10,7 @@ import {render} from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import Main from './components/main/main.jsx';
-import Home from './views/home.jsx';
+import Home from './views/home/home.jsx';
 
 const App = () => {
   return (
