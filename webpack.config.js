@@ -13,6 +13,7 @@ var config = {
     filename: '[name].js'
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: '.',
     port: 3000,
     open: true,

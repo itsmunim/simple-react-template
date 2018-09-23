@@ -10,14 +10,12 @@ import {render} from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import Main from './components/main/main.jsx';
-import Home from './views/home/home.jsx';
+import Config from './config';
 
 const App = () => {
   return (
     <div>
-      <Main views={
-        [{path: '/', component: Home}]
-      }/>
+      <Main views={Config.routes}/>
     </div>
   );
 };

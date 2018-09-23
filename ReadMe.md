@@ -41,7 +41,7 @@ A simple enough react boilerplate; built using `webpack`, served by
               |-- another.view.jsx
               |-- _another.view.scss
           |-- _views.scss (all the .scss partials defined in different views are referenced here)
+      |-- config.js (contains different configurations and routes for different views)
       |-- index.scss (refers _components.scss, _views.scss and any other .scss partials)
-      |-- index.jsx (the entry point where the app renders the main component and which eventually renders the views
-          based on selected route)
+      |-- index.jsx (the entry point where the app renders the main component and which eventually renders the views based on selected route; which it knows via the routes from config.js)
    ```

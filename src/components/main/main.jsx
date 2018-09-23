@@ -12,7 +12,7 @@ class Main extends React.Component {
         <Switch>
           {
             this.props.views.map((view) => {
-              return <Route key={view.path} path={view.path} component={view.component}/>;
+              return <Route exact key={view.path} path={view.path} component={view.component}/>;
             })
           }
         </Switch>
