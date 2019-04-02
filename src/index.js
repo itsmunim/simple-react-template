@@ -6,21 +6,21 @@ import 'bootstrap';
 import './index.scss';
 
 import React from 'react';
-import {render} from 'react-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import Main from './components/main/main.jsx';
+import Main from './components/main/main';
 import Config from './config';
 
 const App = () => {
   return (
     <div>
-      <Main views={Config.routes}/>
+      <Main views={Config.routes} />
     </div>
   );
 };
 
 render(
-  <Router><App/></Router>,
+  <Router><App /></Router>,
   document.getElementById('app')
 );

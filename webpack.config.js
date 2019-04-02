@@ -5,7 +5,7 @@ var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
   entry: {
-    bundle: APP_DIR + '/index.jsx'
+    bundle: APP_DIR + '/index.js'
   },
   devtool: 'source-map',
   output: {
@@ -21,7 +21,7 @@ var config = {
       ignored: /node_modules/
     }
   },
-  module : {
+  module: {
     rules: [
       {
         test: /\.jsx?/,
