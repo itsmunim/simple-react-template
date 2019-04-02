@@ -6,11 +6,11 @@ A simple enough react boilerplate; built using `webpack`, served by
 
 ## Setup
 
-- `yarn install`
-- Build for dev- `yarn build-dev`
-- Build for prod- `yarn build-prod`
-- Running Tests- `yarn test`
-- Run in localhost:3000 & open in browser(auto watch)- `yarn start`
+- `npm install`
+- Build for dev- `npm run build-dev`
+- Build for prod- `npm run build-prod`
+- Running Tests- `npm run test`
+- Run in localhost:3000 & open in browser(auto watch)- `npm start`
 
 ## What's included
 
